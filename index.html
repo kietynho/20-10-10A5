@@ -36,12 +36,29 @@
     box-shadow:0 0 10px 4px rgba(255,120,210,0.4);
   }
   @media(max-width:520px){.particle{width:4px;height:4px;}}
+
+.credit {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 14px;
+  color: rgba(255, 200, 230, 0.8);
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #ff7ccf;
+  user-select: none;
+  z-index: 3; /* để nằm trên các lớp hiệu ứng khác */
+}
+
+ 
 </style>
 </head>
 <body>
 <canvas id="starCanvas"></canvas>
 <canvas id="heartCanvas"></canvas>
 <div class="stage" id="stage"></div>
+<div class="credit">by Kietynho</div>
+
 
 <script>
 /* ---------- SAO BĂNG ---------- */
@@ -269,4 +286,5 @@ startFalling();
   requestAnimationFrame(loop);
 })();
 </script>
+
 
